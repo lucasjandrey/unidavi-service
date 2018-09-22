@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{article.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-card-header>
+        <ion-card-title>{{article.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <p>{{article.description}}</p>
+    </ion-card-content>
+   
+  </ion-card>
+  <!--<ion-card>
+    <ion-item>
+      <ion-label>Titulo:</ion-label>
+      <ion-input name='exemploInput' value={{article.title}}> </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-textarea rows="6" cols="20" value="{{article.description}}"></ion-textarea >
+    </ion-item>
+  </ion-card>-->
+</ion-content>

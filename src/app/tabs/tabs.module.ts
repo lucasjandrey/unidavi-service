@@ -1,3 +1,4 @@
+import { NewsPageModule } from '../news/news.module';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,7 @@ import { ContactPageModule } from '../contact/contact.module';
 import { AboutPageModule } from '../about/about.module';
 import { HomePageModule } from '../home/home.module';
 
+
 @NgModule({
   imports: [
     IonicModule,
@@ -19,7 +21,8 @@ import { HomePageModule } from '../home/home.module';
     TabsPageRoutingModule,
     HomePageModule,
     AboutPageModule,
-    ContactPageModule
+    ContactPageModule,
+    NewsPageModule
   ],
   declarations: [TabsPage]
 })

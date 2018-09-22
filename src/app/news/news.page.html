@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>News</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let article of data?.articles" (click)="showNewsDetail(article)">
+  
+        <ion-label>{{article.title}}</ion-label>
+  
+  </ion-item>
+</ion-content>
